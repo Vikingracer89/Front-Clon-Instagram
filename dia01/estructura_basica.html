@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estructura basica</title>
   </head>
-  <!-- https://validator.w3.org/nu/#textarea  -->
-  <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#elements -->
   <body>
     <header>
+      <!-- Cabecera -->
       <h1>Título principal de la página</h1>
-      <!-- <h2>Título h2</h2>
-      <h3>Título h3</h3>
-      <h4>Título h4</h4>
-      <h5>Título h5</h5>
-      <h6>Título h6</h6> -->
-      <nav></nav>
+      <nav>
+        <!-- Navegación principal -->
+      </nav>
     </header>
     <main>
+      <!-- Contenido principal -->
+      <!-- Otras etiquetas de estructura -->
       <section>
+        <!-- Separar distintas secciones del contenido -->
+        <!-- Pueden tener... -->
         <header><h2>Título de la section 1</h2></header>
-        <!-- No puedo poner un main dentro de section -->
-        <!-- <main></main> -->
+        <!-- No puede haber main, pero si section, article o aside-->
         <section>
           <header><h3>Titulo</h3></header>
           <p>Lo que sea</p>
         </section>
-        <footer>Footer de la section</footer>
+        <footer>Footer de la section 1</footer>
       </section>
       <section>
         <header><h2>Título de la section 2</h2></header>
@@ -37,27 +36,22 @@
           <header><h3>Titulo</h3></header>
           <p>Lo que sea</p>
         </section>
-        <footer>Footer de la section</footer>
+        <footer>Footer de la section 2</footer>
       </section>
       <article>
         <header><h2>Título de la section</h2></header>
-        <!-- Puedo poner un tag de tipo inline dentro de un tag de tipo bloque -->
-        <p>
-          Soy un <img src="/img/HACKABOSS.png" alt="Icono de HACKABOSS" />
-          <em>parrafo</em>. <span>Span es un tag inline no semantico</span>
-        </p>
-        No puedo poner un tag de tipo bloque dentro de un tag de tipo inline
-        <span
-          >Span es un tag inline no semantico
-          <p>parrafo</p></span
-        >
         <!-- No puedo poner un main dentro de section -->
         <!-- <main></main> -->
-        <div>Soy un div, tag de tipo bloque no semantico.</div>
         <footer>Footer de la section</footer>
       </article>
-      <aside></aside>
+      <aside>
+        <!-- Contenido indirectamente relacionado -->
+        <!-- Pueden tener... -->
+        <header></header>
+        <!-- No puede haber main, pero si section, article o aside-->
+        <footer></footer>
+      </aside>
     </main>
-    <footer>Footer de body</footer>
+    <footer>Footer del body</footer>
   </body>
 </html>

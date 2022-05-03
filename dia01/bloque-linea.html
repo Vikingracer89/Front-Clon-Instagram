@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags de tipo bloque y linea</title>
+  </head>
+  <body>
+    <!-- Los elementos de bloque (todos los que vimos hasta ahora) ocupan todo el ancho, 
+    por lo tanto se colocan unos debajo de otros -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#elements -->
+
+    <p>Esto es un párrafo</p>
+    <p>Esto es otro párrafo</p>
+    <div>Div es la etiqueta de bloque genérica (no semantica)</div>
+
+    <!-- Los elementos de linea ocupan el tamaño justo y se colocan unos al lado de otros -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements#Elements -->
+    <p>
+      Dentro de un elemento de bloque, puede haber elementos de linea como:
+      <span>Span (etiqueta de linea genérica, no semantica)</span>,
+      <a href="">los enlaces</a>, <em>elemento em</em> o
+      <img height="100" src="./img/HACKABOSS.png" alt="Logo HACK A BOSS" />
+    </p>
+
+    <!-- Como hemos visto, podemos meter lementos de bloque dentro de elementos de bloque -->
+
+    <section>
+      <p>Dentro de una section podemos meter un párrafo</p>
+    </section>
+
+    <!-- Podemos meter elementos de linea dentro de elementos de bloque -->
+    <p>Dentro de un párrafo <a href="">puede haber un enlace</a></p>
+
+    <!-- Podemos meter elementos de linea, dentro de elementos de linea -->
+    <p>
+      <a href=""> Dentro de un enlace <span>puede haber un span</span></a>
+    </p>
+
+    <!-- NO podemos meter elementos de bloque dentro de elementos de linea -->
+    <span
+      >Meter
+      <p>un párrafo dentro de un span</p>
+      está MAL</span
+    >
+  </body>
+</html>
