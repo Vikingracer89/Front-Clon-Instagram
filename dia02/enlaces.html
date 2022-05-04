@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enlaces</title>
+  </head>
+  <body>
+    <header>
+      <h1>Enlaces</h1>
+    </header>
+    <main>
+      <section id="enlace_externos" class="section principal">
+        <header>
+          <h2>Enlaces externos</h2>
+          <p>Empieza por http:// o https://</p>
+        </header>
+        <a href="http://www.google.com" target="_blank" title="Página de google"
+          >Google</a
+        >
+        <!-- El tag BR hace un new line -->
+        <!-- Atributo "title" importante para la acesibilidad -->
+        <br />
+        <a href="https://developer.mozilla.org/es/" target="_blank" title="MDN"
+          >MDN</a
+        >
+      </section>
+      <section class="section">
+        <header><h2>Enlaces internos</h2></header>
+        <a href="./listas.html">Listas</a>
+        <!-- Desde root solo con un servidor web -->
+        <!-- Asi no funcionaria
+        file:///home/stefano/bootcamps/JSB09RT_recursos/JSB09RT/mod1-html/dia02/enlaces.html -->
+        <a href="/dia02/listas.html">Listas</a>
+        <a href="./tablas.html">Tablas</a>
+      </section>
+      <section>
+        <header>
+          <h2>Anclas</h2>
+        </header>
+        <a href="./pagina.html#article3">Pagina</a>
+        <a href="#enlace_externos">Enlaces externos</a>
+      </section>
+      <section>
+        <header>
+          <h2>Downloads</h2>
+        </header>
+        <a href="./multimedia/download.jpeg">Pokemon</a>
+        <a href="./multimedia/download.jpeg" download="pokemon">Pokemon</a>
+        <img src="./multimedia/download.jpeg" alt="Imagen Pokemon" width="50" />
+        <a
+          href="./multimedia/Comunicado Alumnos - Coworkers HACK A BOSS.pdf"
+          download
+          >Comunicado.pdf</a
+        >
+        <a
+          href="./multimedia/download.jpeg"
+          download="pokemon"
+          title="Imagen de Pokemon"
+        >
+          <img
+            src="./multimedia/download.jpeg"
+            alt="Imagen Pokemon"
+            width="50"
+          />
+        </a>
+      </section>
+    </main>
+  </body>
+</html>

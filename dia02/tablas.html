@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+  </head>
+  <body>
+    <header><h1>Tablas</h1></header>
+    <p>
+      Llevamos a una tablas datos que quiero organizar en filas y columnas. Solo
+      siver para mostrar contenido tabular. NO PARA DEFINIR EL LAYOUT de mi
+      página.
+    </p>
+    <a href="./enlaces.html">Home</a>
+    <section>
+      <header>
+        <h2>Tabla básica 2x2</h2>
+      </header>
+      <table border="1">
+        <tr>
+          <td>Columna 1</td>
+          <td>Columna 2</td>
+        </tr>
+        <tr>
+          <td>Valor 1</td>
+          <td>Valor 2</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <header>
+        <h2>Tabla básica</h2>
+      </header>
+      <table border="1">
+        <tr>
+          <td></td>
+          <th>Titulo 1</th>
+          <th>Titulo 2</th>
+          <th>Titulo 3</th>
+        </tr>
+        <tr>
+          <th>Titulo</th>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+          <td>Dato 3</td>
+        </tr>
+        <tr>
+          <th>Titulo</th>
+          <td>Dato</td>
+          <td>Dato</td>
+          <td></td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <header>
+        <h2>Tabla compleja</h2>
+      </header>
+      <table border="1">
+        <tr>
+          <th colspan="2">Titulo 1</th>
+          <th>Titulo 2</th>
+          <th>Titulo 3</th>
+        </tr>
+        <tr>
+          <th>Titulo</th>
+          <td rowspan="3">Dato 0</td>
+          <td rowspan="2" colspan="2">Dato</td>
+        </tr>
+        <tr>
+          <th>Titulo</th>
+          <!-- <td>Algo</td> -->
+        </tr>
+        <tr>
+          <th>Titulo</th>
+          <td>Dato 1</td>
+          <td>Dato 2</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <header><h2>Tabla semantica</h2></header>
+    </section>
+    <table border="1">
+      <caption>
+        <b>Mi tabla</b>
+      </caption>
+      <thead>
+        <tr>
+          <td></td>
+          <th>Titulo1</th>
+          <th>Titulo2</th>
+          <th>Titulo3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Titulo</th>
+          <td>Dato</td>
+          <td>Dato</td>
+          <td>Dato</td>
+        </tr>
+        <tr>
+          <th>Titulo</th>
+          <td>Dato</td>
+          <td>Dato</td>
+          <td>Dato</td>
+        </tr>
+      </tbody>
+      <!-- <tfoot>
+        <tr>
+          <td colspan="4">Footer</td>
+        </tr>
+      </tfoot> -->
+    </table>
+  </body>
+</html>
