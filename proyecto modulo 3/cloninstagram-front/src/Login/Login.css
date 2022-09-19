@@ -1,0 +1,30 @@
+.modal-like {
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-like form {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.modal-like h1 {
+  font-size: 150%;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.modal-like label {
+  display: block;
+  margin: 4px 0;
+}
+
+.modal-like label span {
+  display: inline-block;
+  width: 90px;
+}
+
+.modal-like button {
+  display: block;
+  margin: 20px auto 0;
+}
